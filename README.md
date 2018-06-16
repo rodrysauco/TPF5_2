@@ -99,12 +99,10 @@ Ejemplo :
 	  },
 	]
 
-
-
-"prices" : [
-  {
-    "cabin" :  “Economic”,
-    “cabinId” : 1 ,
-    “price” : 23.5
-  }
-]
+	"prices" : [
+	  {
+	    "cabin" :  “Economic”,
+	    “cabinId” : 1 ,
+	    “price” : 23.5
+	  }
+	]
