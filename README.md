@@ -14,63 +14,59 @@ Esta API REST debe ser la capa que se conecte a la base de datos y los datos deb
 
 Ejemplos :
 
-“airports” : [ {
-			"iataCode :“MDQ”,
-      “name” : “Aeropuerto Internacional Astor Piazzola”,
-      “city” : {
-	       “name”:”Mar del Plata”,
-         “iataCode” : “MDQ”
-	    },
-      “country” : {
-          “name”: “Argentina”,
-          “isoCode” :” AR”
-       }
-					“latitude” : -23.5,
-					“longitude”: 14.3
- }]
+	“airports” : [ {
+				"iataCode :“MDQ”,
+	      “name” : “Aeropuerto Internacional Astor Piazzola”,
+	      “city” : {
+		       “name”:”Mar del Plata”,
+		 “iataCode” : “MDQ”
+		    },
+	      “country” : {
+		  “name”: “Argentina”,
+		  “isoCode” :” AR”
+	       }
+						“latitude” : -23.5,
+						“longitude”: 14.3
+	 }]
 
 
-
-
-
-
-“prices” : [{
-	    “origin”  :  {
-			                     “itaCode”: “MDQ”,
-			                     “name” : “Aeropuerto Internacional Astor Piazzola”,
-			                     “city” : {
-	    			                          “name”:”Mar del Plata”,
-                    			            “iataCode” : “MDQ”
-	                          },
-                            “country” : {
-                                          “name”: “Argentina”,
-                                          “isoCode” :” AR”
-                            },
-					                  “latitude” : -23.5,
-					                  “longitude”: 14.3
-                            },
-        "destination"  :    {
-                             “iataCode”:”EZE”,
-                             “name” : “Aeropuerto Internacional Ministro Pistarini”,
-                             “city” : {
-                                        “name”:”Buenos Aires”,
-                                        “iataCode” : ”BUE”,
-                              },
-                              “country” : {
-                                            “name”: “Argentina”,
-                                            “isoCode” :”AR”
-                              },
-                              “latitude” : -23.5,
-                              “longitude”: 14.3
-                              },
-        "cabin" : {
-                "id" : "1",
-                "name" : "Economic"
-        },
-        price : 24.5,
-        vigencyFrom : "01-05-2018",
-        vigencyTo :"05-08-2018"
-    }]
+	“prices” : [{
+		    “origin”  :  {
+						     “itaCode”: “MDQ”,
+						     “name” : “Aeropuerto Internacional Astor Piazzola”,
+						     “city” : {
+								  “name”:”Mar del Plata”,
+							    “iataCode” : “MDQ”
+					  },
+				    “country” : {
+						  “name”: “Argentina”,
+						  “isoCode” :” AR”
+				    },
+								  “latitude” : -23.5,
+								  “longitude”: 14.3
+				    },
+		"destination"  :    {
+				     “iataCode”:”EZE”,
+				     “name” : “Aeropuerto Internacional Ministro Pistarini”,
+				     “city” : {
+						“name”:”Buenos Aires”,
+						“iataCode” : ”BUE”,
+				      },
+				      “country” : {
+						    “name”: “Argentina”,
+						    “isoCode” :”AR”
+				      },
+				      “latitude” : -23.5,
+				      “longitude”: 14.3
+				      },
+		"cabin" : {
+			"id" : "1",
+			"name" : "Economic"
+		},
+		price : 24.5,
+		vigencyFrom : "01-05-2018",
+		vigencyTo :"05-08-2018"
+	    }]
 
 
 
@@ -83,25 +79,25 @@ Una vez elegido un aeropuerto de salida, se deben listar los aeropuertos donde h
 Una vez elegidos los dos aeropuertos, las fechas de viaje,  listar las cabinas disponibles y los precios correspondientes a estos.
 
 
-	Esta API debe devolver la información consultada, conectándose a la API REST desarrollada en el ejercicio 	1 formateando la información para ser mostrada en cajas de diálogo en el formato {ciudad} - {iataCode} - {nombre aeropuerto} .
+Esta API debe devolver la información consultada, conectándose a la API REST desarrollada en el ejercicio 	1 formateando la información para ser mostrada en cajas de diálogo en el formato {ciudad} - {iataCode} - {nombre aeropuerto} .
 
 Ejemplo :
 
 
-"airports" : [
-  {
-    "name" : "Mar del Plata (MDQ) - Astor Piazzola - Argentina"
-    "iataCode" :"MDQ"
-  },
-  {
-    "name" : "Buenos Aires (EZE) - Ministro Pistarini - Argentina"
-    "iataCode" :"EZE"
-  },
-  {
-    "name" : "Buenos Aires (AEP) -Jorge Newery - Argentina"
-    "iataCode" :"AEP"
-  },
-]
+	"airports" : [
+	  {
+	    "name" : "Mar del Plata (MDQ) - Astor Piazzola - Argentina"
+	    "iataCode" :"MDQ"
+	  },
+	  {
+	    "name" : "Buenos Aires (EZE) - Ministro Pistarini - Argentina"
+	    "iataCode" :"EZE"
+	  },
+	  {
+	    "name" : "Buenos Aires (AEP) -Jorge Newery - Argentina"
+	    "iataCode" :"AEP"
+	  },
+	]
 
 
 
